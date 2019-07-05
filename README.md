@@ -7,9 +7,10 @@ For details, see [[1](#references)].
 
 The temporal models are a submodule, and therefore, you need to initialize it: **git submodule --init --recusive**.
 To re-run the experiments, first go to the *src* folder and type **make** to compile the predictive framework.
-Then, go to the *eval_scripts* folder and type *make* to compile the *t-test* utility.
+Edit the *src/models/test_models.txt* file to indicate, which models you want to evaluate.
+Then, go to the *eval_scripts* folder and type **make** to compile the **t-test** utility. 
 
-Then, type:
+To run the evaluation, type:
 
 **./process_dataset.sh greg_door_2016_min**
 
